@@ -1,2 +1,2 @@
-# ultimate-cybersecurity-lab
+# Ultimate Cybersecurity Lab
 ultimate-cybersecurity-lab
