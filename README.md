@@ -1,8 +1,7 @@
 # Ultimate Cybersecurity Lab
 
-PFSENSE TO DO
 *************
-
+PFSENSE TO DO
 
 Enable SSH before connecting to firewall
 
@@ -14,10 +13,10 @@ In Wazuh - Create group and enable rule
 
 
 
-
-
-Enable Free BSD
 ****************
+
+ENABLE FREEBSD
+
  
 cd /usr/local/etc/pkg/repos/
 
@@ -32,10 +31,8 @@ vi FreeBSD.conf
 FreeBSD: { enabled: yes }
 
 
-
-
-Install Agent
-**************
+*************
+INSTALL AGENT
 
 pkg update
 pkg search wazuh-agent
@@ -43,10 +40,9 @@ pkg search wazuh-agent
 pkg install wazuh-agent-4.7.2
 
 
+*************
+START THE FIREWALL AGENT
 
-
-Start the firewall agent
-************************
 cp /etc/localtime /var/ossec/etc
 
 edit ossec.conf - add
