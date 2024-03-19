@@ -28,19 +28,19 @@ Please follow the instructions below to install the Wazuh agent on the pfsense f
 By default, FreeBSD package repos are disabled on pfSense firewalls.  Follow below to enable for our lab.
 
 SSH to firewall, navigate to the following directory:
-*cd /usr/local/etc/pkg/repos/*
+```cd /usr/local/etc/pkg/repos/```
 
 Edit pfsense.conf file:
-*vi pfsense.conf*
+```vi pfsense.conf```
 
 Set to:
-*FreeBSD: { enabled: yes }*
+```FreeBSD: { enabled: yes }```
 
 Edit freebsd.conf file:
-*vi FreeBSD.conf*
+```vi FreeBSD.conf```
 
 Set to:
-*FreeBSD: { enabled: yes }*
+```FreeBSD: { enabled: yes }```
 
 
 
