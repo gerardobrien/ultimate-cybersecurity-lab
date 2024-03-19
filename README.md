@@ -88,8 +88,7 @@ Create sumbolic link
 
 
 
-Enable Firewall logs
-********************
+### Enable Firewall logs
 Waht to monitor your firewall logs? We need to create a pfsense group, and add the following.
 
 In Wazuh, navigate to Management > new new group
@@ -103,12 +102,12 @@ edit group and add the following:
 
 
 
-Create custom rule
-******************
+### Create custom rule
 Monitor the output in filter.log file.
 
 Navigate to Management > Rules > create a new rule and add the following:
 
+```
 *<group name="pfsense,">*
   *<rule id="87701" level="5" overwrite="yes">*
     *<if_sid>87700</if_sid>*
@@ -117,7 +116,7 @@ Navigate to Management > Rules > create a new rule and add the following:
     *<group>firewall_block,pci_dss_1.4,gpg13_4.12,hipaa_164.312.a.1,nist_800_53_SC.7,tsc_CC6.7,tsc_CC6.8,</group>*
   *</rule>*
 *</group>*
-
+```
 Add rule to the existing pfsense group you created previously.
 
 
