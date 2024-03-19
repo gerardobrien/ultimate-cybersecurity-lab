@@ -9,6 +9,8 @@ In this episode we build our SIEM and XRD tool, Wazuh. We then install the Wazuh
 Please follow the instructions below to install the Wazuh agent on the pfsense firewall.
 
 
+*******
+
 
 ### pfSense Wazuh Agent Install Overview
 
@@ -21,6 +23,8 @@ Please follow the instructions below to install the Wazuh agent on the pfsense f
 4. In Wazuh - Create group and enable rule
 
 
+
+*******
 
 
 ### Enable FreeBSD so we can pull down the wazuh agent
@@ -53,7 +57,7 @@ FreeBSD: { enabled: yes }
 ```
 
 
-
+*******
 
 
 ### Install Wazuh Agent
@@ -73,7 +77,7 @@ Install Wazuh firewall agent
 pkg install wazuh-agent-4.7.2
 ```
 
-
+*******
 
 
 ### Start Wazuh Agent
@@ -113,7 +117,7 @@ service wazuh-agent start
 
 
 
-
+*******
 
 
 ### Enable Firewall logs
@@ -129,6 +133,8 @@ edit group and add the following:
 	<location>/var/log/filter.log</location>
 </localfile>
 ```
+
+*******
 
 
 ### Create custom rule
